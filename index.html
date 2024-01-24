@@ -6,8 +6,10 @@
     <title>Hockeys-main</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- tailwind custom css -->
@@ -35,8 +37,10 @@
 <body class=".font-manrope">
     <header class="container mx-auto">
       <!-- class=navbar bg-base-100 -->
-      <div class="flex flex-row justify-around items-center mt-10 ">
-        <div class=" flex flex-1 lg:flex-row">
+      <!-- <div class="flex flex-row justify-around items-center mt-10"> -->
+        <div class="navbar bg-base-100">
+          <!-- <div class=" flex flex-1 lg:flex-row"> -->
+        <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -52,7 +56,7 @@
          <img class="h-10 w-10" src="Images/hocky_img.webp" alt="" srcset="">
          
         </div>
-        <div class="hidden mr-6 lg:flex">
+        <div class=" navbar-center hidden mr-6 lg:flex">
           <ul class="menu text-base menu-horizontal px-1">
             <li><a>Home</a></li>
             <li><a>About</a></li>
@@ -62,42 +66,80 @@
           </ul>
         </div>
         <!-- class=navbar-end -->
-        <div class="flex flex-1 lg:flex-row justify-center items-center ">
+        <div class="navbar-end flex flex-1 lg:flex-row justify-end items-center ">
           <i class="fa-solid fa-magnifying-glass mr-3"></i><a class="btn text-white bg-[#FF4240]">Get Ticket</a>
         </div>
       </div>
       
-      <!-- <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
-        </div>
-      </div> -->
     </header>
 
     <main class="container mx-auto">
+      <section>
+        <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+                <!-- Slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full bg-center rounded-xl bg-no-repeat bg-cover" style="background-image: url('./Images/1.png')">
+             <div class="flex p-2 justify-end items-end ">
+                   <div class=" bg-black">
+                   <h2 class="text-6xl font-bold text-white">
+                    Ride-on R15 V4 
+                    <br> with Smile
+                   </h2> 
+                   <p>Amet minim mollit non deserunt ullamco 
+                   est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                   <button class="btn bg-bike-primary text-white"> purchase</button>
+                  </div>
+                  
+          </div>
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+                           <!-- Slide-2 -->
+                           <div id="slide1" class="carousel-item relative w-full bg-center rounded-xl bg-no-repeat bg-cover" style="background-image: url('./Images/1.png')">
+                            <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20 ">
+                                  <div class="space-y-7 flex-1">
+                                  <h2 class="text-6xl font-bold">
+                                   Ride-on R15 V4 
+                                   <br> with Smile
+                                  </h2> 
+                                  <p>Amet minim mollit non deserunt ullamco 
+                                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                  <button class="btn bg-bike-primary text-white"> purchase</button>
+                                 </div>
+                                 
+                         </div>
+                           
+                           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                             <a href="#slide4" class="btn btn-circle">❮</a> 
+                             <a href="#slide2" class="btn btn-circle">❯</a>
+                           </div>
+                         </div> 
+          <!-- <div id="slide2" class="carousel-item relative w-full">
+            <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20 relative  bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/1.png');" >
+
+              <div class="space-y-7 flex-1">
+              <h2 class="text-6xl font-bold">
+               Ride-on R15 V4 
+               <br> with Smile
+              </h2> 
+              <p>Amet minim mollit non deserunt ullamco 
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-bike-primary text-white"> purchase</button>
+             </div>
+  
+            <div class="flex-1"><img src="./Images/1.png" class="w-full" /></div> 
+          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>  -->
+          
+        </div>
+      </section>
+                                           <!-- Program Sections -->
   <section class="my-10 ">
     <div class="text-center mb-4">
       <h2 class="text-black text-3xl font-medium">Program Sections</h2>
@@ -105,28 +147,36 @@
     
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
       
-      <div class=" relative h-80 bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/2.png');"> 
-        <div class="max-w-md text-center lg:text-left p-4 space-y-4 absolute lg:top-16">
-            <h1 class=" text-5xl font-bold">Junior Program</h1>
-            <p class="">Woking Hockey Club Junior section aims to engage, challenge and inspire players of all abilities for them to achieve to the best of their ability or aspirations.</p>
+      <div class=" bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/2.png');"> 
+        <div class=" h-48 relative p-3 max-w-md lg:top-16 ">
+                     <!-- lg:text-left  lg:top-16   justify-start items-end max-w-md -->
+          <div class=" absolute text-center lg:text-left lg:mt-4">
+            
+            <h1 class=" text-2xl font-bold">Junior Program</h1>
+            <p class="text-sm">Woking Hockey Club Junior section aims to engage, challenge and inspire players of all abilities for them to achieve to the best of their ability or aspirations.</p>
             <button class="btn bg-[#FF4240] border-[#FF4240] rounded-xl p-3">Register Now</button>
           </div>
+        
+
+      </div>
+        
         </div>
       
    
-      <div class=" relative h-80 bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/3.png');"> 
-        <div class=" max-w-md text-center lg:text-left p-4 space-y-4 absolute lg:top-16">
+      <div class=" bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/3.png');"> 
+        <div class=" max-w-md text-center lg:text-left p-4 space-y-4 lg:top-16">
             <h1 class=" text-5xl font-bold">Teenager Program</h1>
             <p class="">The section encourages teenagers to play adult hockey when they are ready, and with its high quality coaching programme ensures that player development is available to members of all levels.
             </p>
             <button class="btn bg-[#FF4240] border-[#FF4240] rounded-xl p-3">Register Now</button>
           </div>
         </div>
+       
     
       
-      <div class="col-span-2 h-96 bg-center rounded-xl bg-no-repeat bg-cover text-white text-center lg:flex lg:justify-start lg:items-end " style="background-image: url('./Images/4.png');">
+      <div class="lg:col-span-2 bg-center rounded-xl bg-no-repeat bg-cover text-white text-center lg:flex lg:justify-start lg:items-end " style="background-image: url('./Images/4.png');">
         
-          <div class="w-1/2 text-center lg:text-left p-4 space-y-4 ">
+          <div class=" lg:w-1/2 text-center lg:text-left p-4 space-y-4 ">
           
             <h1 class=" text-5xl font-bold">Professional Program</h1>
             <p class="">Woking Hockey Club has 10 adult men's teams playing in competitive leagues. The section encourages juniors to play adult hockey when they are ready, and with its high quality coaching programme ensures that player development is available to members of all levels.</p>
