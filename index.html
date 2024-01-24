@@ -76,44 +76,38 @@
     <main class="container mx-auto">
       <section>
         <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
-                <!-- Slide-1 -->
-          <div id="slide1" class="carousel-item relative w-full bg-center rounded-xl bg-no-repeat bg-cover" style="background-image: url('./Images/1.png')">
-             <div class="flex p-2 justify-end items-end ">
-                   <div class=" bg-black">
-                   <h2 class="text-6xl font-bold text-white">
-                    Ride-on R15 V4 
-                    <br> with Smile
-                   </h2> 
+                                            <!-- Slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full bg-center rounded-xl bg-no-repeat bg-cover object-fill w-auto h-auto" style="background-image: url('./Images/1.png')">
+             <div class="hidden lg:flex flex-1   justify-end items-end p-5">
+                   <div class=" bg-black rounded-xl p-3">
+                    <h2 class="text-3xl font-extrabold text-white ">Meet all the heroes from the field</h2> 
                    <p>Amet minim mollit non deserunt ullamco 
-                   est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                   <button class="btn bg-bike-primary text-white"> purchase</button>
+                   est sit aliqua dolor do amet sint. <br> Velit officia consequat duis enim velit mollit.</p>
+                  
                   </div>
                   
           </div>
-            
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
+          <!-- absolute transform -translate-y-1/2 left-5 right-5 top-1/2-->
+            <div class=" absolute lg:bottom-4 lg:left-4 gap-2">
+              <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❮</a> 
+              <a href="#slide2" class="btn btn-circle  bg-black text-white border-none">❯</a>
             </div>
           </div> 
                            <!-- Slide-2 -->
-                           <div id="slide1" class="carousel-item relative w-full bg-center rounded-xl bg-no-repeat bg-cover" style="background-image: url('./Images/1.png')">
+                           <div id="slide2" class="carousel-item relative w-full bg-center rounded-xl bg-no-repeat bg-cover" style="background-image: url('./Images/1.png')">
                             <div class="flex flex-col lg:flex-row p-4 lg:p-24 gap-20 ">
                                   <div class="space-y-7 flex-1">
-                                  <h2 class="text-6xl font-bold">
-                                   Ride-on R15 V4 
-                                   <br> with Smile
-                                  </h2> 
+                                  <h2 class="text-3xl font-extrabold">Meet every heroes from the field</h2> 
                                   <p>Amet minim mollit non deserunt ullamco 
                                   est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
                                   <button class="btn bg-bike-primary text-white"> purchase</button>
                                  </div>
                                  
                          </div>
-                           
-                           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                             <a href="#slide4" class="btn btn-circle">❮</a> 
-                             <a href="#slide2" class="btn btn-circle">❯</a>
+                                                <!-- class= absolute transform -translate-y-1/2  -->
+                           <div class=" absolute bottom-4 left-4 gap-2">
+                             <a href="#slide1" class="btn btn-circle bg-black text-white border-none" >❮</a> 
+                             <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
                            </div>
                          </div> 
           <!-- <div id="slide2" class="carousel-item relative w-full">
@@ -146,43 +140,42 @@
       <p class="text-xs">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p></div>
     
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-      
-      <div class=" bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/2.png');"> 
-        <div class=" h-48 relative p-3 max-w-md lg:top-16 ">
+                                                                <!-- 1st grid -->
+      <div class="p-4 bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/2.png');"> 
+        <div class=" h-48 relative p-3 max-w-md ">
                      <!-- lg:text-left  lg:top-16   justify-start items-end max-w-md -->
-          <div class=" absolute text-center lg:text-left lg:mt-4">
-            
+          <div class=" absolute text-center lg:text-left lg:bottom-0 lg:left-0">
             <h1 class=" text-2xl font-bold">Junior Program</h1>
             <p class="text-sm">Woking Hockey Club Junior section aims to engage, challenge and inspire players of all abilities for them to achieve to the best of their ability or aspirations.</p>
             <button class="btn bg-[#FF4240] border-[#FF4240] rounded-xl p-3">Register Now</button>
           </div>
-        
-
+      </div> 
       </div>
-        
-        </div>
-      
+                                                           <!-- 2nd grid -->
    
-      <div class=" bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/3.png');"> 
-        <div class=" max-w-md text-center lg:text-left p-4 space-y-4 lg:top-16">
-            <h1 class=" text-5xl font-bold">Teenager Program</h1>
-            <p class="">The section encourages teenagers to play adult hockey when they are ready, and with its high quality coaching programme ensures that player development is available to members of all levels.
+      <div class="p-4 bg-center rounded-xl bg-no-repeat bg-cover text-white" style="background-image: url('./Images/3.png');"> 
+        <div class="h-48 relative mx-w-md ">
+         <div class=" absolute  text-center lg:text-left lg:bottom-0 lg:left-0">
+            <h1 class=" text-2xl font-bold">Teenager Program</h1>
+            <p class="text-sm">The section encourages teenagers to play adult hockey when they are ready, and with its high quality coaching programme ensures that player development is available to members of all levels.
             </p>
             <button class="btn bg-[#FF4240] border-[#FF4240] rounded-xl p-3">Register Now</button>
           </div>
         </div>
+      </div>
        
-    
+                                                                <!-- 3rd grid -->
       
-      <div class="lg:col-span-2 bg-center rounded-xl bg-no-repeat bg-cover text-white text-center lg:flex lg:justify-start lg:items-end " style="background-image: url('./Images/4.png');">
+      <div class="p-4 lg:col-span-2 bg-center rounded-xl bg-no-repeat bg-cover text-white text-center lg:flex lg:justify-start lg:items-end " style="background-image: url('./Images/4.png');">
         
-          <div class=" lg:w-1/2 text-center lg:text-left p-4 space-y-4 ">
+        <div class="relative">
+          <div class="lg:w-1/2 text-center lg:text-left lg:bottom-0 lg:left-0">
           
-            <h1 class=" text-5xl font-bold">Professional Program</h1>
-            <p class="">Woking Hockey Club has 10 adult men's teams playing in competitive leagues. The section encourages juniors to play adult hockey when they are ready, and with its high quality coaching programme ensures that player development is available to members of all levels.</p>
+            <h1 class=" text-2xl font-bold">Professional Program</h1>
+            <p class="text-sm">Woking Hockey Club has 10 adult men's teams playing in competitive leagues. The section encourages juniors to play adult hockey when they are ready, and with its high quality coaching programme ensures that player development is available to members of all levels.</p>
             <button class="btn bg-[#FF4240] border-[#FF4240] rounded-xl p-3">Register Now</button>
           </div>
-       
+        </div>
         
       </div>
     </div>  
